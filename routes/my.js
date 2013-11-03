@@ -10,7 +10,7 @@ exports.page1 = function(req, res){
 	filename = 'data/message.' + req.params.id.toString();
 	console.log(filename);
 	fs.readFile(filename, function(err,data){
-	    res.send(data.toString());
+	    res.send(data.toString().replace(/\r/g,"<br/>"));
 	});
     }
     else
