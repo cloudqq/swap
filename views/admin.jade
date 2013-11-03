@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{session.user}
+  div.logout 
+    a(href='/logout') 退出系统
+  div 
+    div.content_list
+      ul
+        each v in data
+          li
+            div.edit_item
+              div.edit_content!=v.content
+              div.command_bar 
+                a(href='/index/'+v.id+"/edit") 修改

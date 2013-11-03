@@ -1,0 +1,18 @@
+extends auth_layout
+
+block content
+  - if (locales.retry === "1")
+    h1= "重新登陆"
+  - else
+    h1= "登陆"
+  div.loginbox
+    form(name="login",action="/login",method="post")
+      fieldset(data-role='control-group')
+        label(for="user") 用户名 
+        input(type="text", name="user" size="40")
+        br
+        label(for="pass") 密&nbsp&nbsp&nbsp码 
+        input(type="password", name="pass",size="40")
+      br
+      input(type="submit",value="登陆")
+    

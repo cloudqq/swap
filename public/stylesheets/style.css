@@ -1,0 +1,64 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+div.loginbox {
+    position: relative;
+    margin: 0px auto;
+    padding: 20px;
+    width: 305px;
+    border: 1px; solid; #ACC3E4;
+    background: #EDF5FF;
+    -webkit-border-radius: 5px;
+    -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.15);
+
+}
+
+table.content_table {
+    border: 1px; solid; #FF0000;
+    background: #ff00ff;
+}
+div.edit_item{
+    position: relative;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    border-radius:3px;
+    margin-left: 0px;
+    margin-bottom:5px;
+    width:400px;
+    height:160px;
+    clear:both;
+}
+
+div.edit_content{
+    clear:both;
+}
+
+div.command_bar {
+    position: absolute;
+    top: 146px;
+    left:360px;
+    z-index:999;
+    width: 120px;
+    font-size:9px;
+    clear:both;
+}
+
+div.logout {
+    position:absolute;
+    left: 420px;
+    top: 92px;
+    font-size: 9px;
+}
+
+ul{
+    list-style-type:none;
+    padding: 0px;
+    margin: 0px;
+}

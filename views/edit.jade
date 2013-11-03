@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{session.user}
+  div 
+    form(name="edit",action="/commit/"+id,method="post")
+      textarea(id="input_box" name="input_box" rows="10" cols="50") #{message}
+      br
+      input(type="submit" name="commit")
+
+
